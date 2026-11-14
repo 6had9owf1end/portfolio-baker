@@ -10,3 +10,6 @@
 - HTML5
 - CSS3
 - JavaScript
+
+## Лабораторна робота № 5
+Макетування сторінки за допомогою CSS Grid: створено сторінку дашборду [dashboard.html](dashboard.html) з адаптивною сіткою (.layout на grid-template-areas, картки на CSS Grid).

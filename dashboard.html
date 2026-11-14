@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дашборд — Продажі та замовлення кондитерської</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="layout__header">
+      <h1>Продажі та замовлення кондитерської</h1>
+    </header>
+    <aside class="layout__sidebar">
+      <nav aria-label="Розділи дашборду">
+        <ul>
+          <li><a href="#">Огляд</a></li>
+          <li><a href="#">Звіти</a></li>
+          <li><a href="#">Налаштування</a></li>
+          <li><a href="index.html">← До портфоліо</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="layout__main">
+      <section class="cards" aria-label="Ключові показники">
+        <article class="card card--wide">
+          <h2>Динаміка замовлень за тиждень (Пн–Нд)</h2>
+          <div class="chart" role="img" aria-label="Стовпчикова діаграма кількості замовлень за сім днів">
+            <span style="--h: 45%" title="Понеділок: 45%"></span>
+            <span style="--h: 65%" title="Вівторок: 65%"></span>
+            <span style="--h: 55%" title="Середа: 55%"></span>
+            <span style="--h: 80%" title="Четвер: 80%"></span>
+            <span style="--h: 95%" title="П’ятниця: 95%"></span>
+            <span style="--h: 100%" title="Субота: 100%"></span>
+            <span style="--h: 75%" title="Неділя: 75%"></span>
+          </div>
+        </article>
+        <article class="card">
+          <h2>Замовлень за місяць</h2>
+          <p class="card__value">145</p>
+        </article>
+        <article class="card">
+          <h2>Середній чек</h2>
+          <p class="card__value">850 ₴</p>
+        </article>
+        <article class="card card--tall">
+          <h2>Рейтинг десертів (Висока картка)</h2>
+          <p class="card__value">4,9 ★</p>
+          <p class="card__note">Середня оцінка якості за відгуками клієнтів за місяць</p>
+        </article>
+        <article class="card">
+          <h2>Постійних клієнтів</h2>
+          <p class="card__value">64 %</p>
+        </article>
+        <article class="card">
+          <h2>Індивідуальних тортів</h2>
+          <p class="card__value">38</p>
+        </article>
+      </section>
+    </main>
+    <footer class="layout__footer">
+      <p>© 2026 Бібко Олександр Сергійович · СОІ-24-1 · Лабораторна робота № 5</p>
+    </footer>
+  </div>
+</body>
+</html>
