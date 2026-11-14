@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо – Кулінарний блог кондитера</title>
+</head>
+<body>
+ 
+  <header>
+    <h1>Солодка Майстерня Олександра Бібка</h1>
+    <nav>
+      <a href="#about">Про мене</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#contact">Контакти</a>
+      <a href="lab6.html">Лабораторна 6</a>
+      <a href="todo.html">Список справ</a>
+      <a href="api.html">API</a>
+      <a href="dashboard.html">Дашборд</a>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="about">
+      <h2>Про мене</h2>
+      <p>
+        Привіт! Я професійний шеф-кондитер із 5-річним досвідом створення
+        авторських десертів, мусових тортів та ремісничої випічки. На цьому
+        сайті я ділюся перевіреними рецептами та власними кулінарними
+        проєктами.
+      </p>
+      <ul>
+        <li>Авторські мусові та весільні торти</li>
+        <li>Французька випічка та макаронс</li>
+        <li>Майстер-класи з кондитерського мистецтва</li>
+      </ul>
+    </section>
+ 
+    <section id="projects">
+      <h2>Проєкти</h2>
+ 
+      <article>
+        <h3>Колекція «Осінні тарти»</h3>
+        <p>Серія з 5 авторських рецептів пісочних тартів із карамелізованою грушею, горіховим праліне та бельгійським шоколадом.</p>
+      </article>
+ 
+      <article>
+        <h3>Онлайн-каталог весільних тортів</h3>
+        <p>Інтерактивна підбірка багатоярусних тортів із розрахунком ваги, варіантами начинок та декору з живих квітів.</p>
+      </article>
+ 
+      <article>
+        <h3>Відеокурс «Ідеальний круасан вдома»</h3>
+        <p>Покроковий посібник із роботи з листковим дріжджовим тістом, температурними режимами та випіканням.</p>
+      </article>
+    </section>
+ 
+    <section id="contact">
+      <h2>Контакти</h2>
+      <form action="#" method="post">
+        <label for="name">Ім’я *</label><br>
+        <input type="text" id="name" name="name"
+               required minlength="2" maxlength="50"><br><br>
+ 
+        <label for="email">Електронна пошта *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+ 
+        <label for="topic">Тема звернення *</label><br>
+        <select id="topic" name="topic" required>
+          <option value="" disabled selected>Оберіть тему</option>
+          <option value="general">Загальне питання</option>
+          <option value="work">Замовлення / Пропозиція співпраці</option>
+        </select><br><br>
+ 
+        <label for="message">Повідомлення *</label><br>
+        <textarea id="message" name="message"
+                  required maxlength="500" rows="5"></textarea><br><br>
+ 
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+  </main>
+ 
+  <footer>
+    <p>&copy; 2026 Бібко Олександр Сергійович. Усі права захищено.</p>
+  </footer>
+ 
+</body>
+</html>
