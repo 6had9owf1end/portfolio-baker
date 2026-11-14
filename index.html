@@ -39,44 +39,52 @@
  
     <section id="projects">
       <h2>Проєкти</h2>
- 
-      <article>
-        <h3>Колекція «Осінні тарти»</h3>
-        <p>Серія з 5 авторських рецептів пісочних тартів із карамелізованою грушею, горіховим праліне та бельгійським шоколадом.</p>
-      </article>
- 
-      <article>
-        <h3>Онлайн-каталог весільних тортів</h3>
-        <p>Інтерактивна підбірка багатоярусних тортів із розрахунком ваги, варіантами начинок та декору з живих квітів.</p>
-      </article>
- 
-      <article>
-        <h3>Відеокурс «Ідеальний круасан вдома»</h3>
-        <p>Покроковий посібник із роботи з листковим дріжджовим тістом, температурними режимами та випіканням.</p>
-      </article>
+      <div class="projects-list">
+        <article>
+          <h3>Авторський торт «Прага»</h3>
+          <p>Класичний шоколадний бісквіт із абрикосовим конфітюром та ганашем.</p>
+        </article>
+        <article>
+          <h3>Колекція французьких макаронс</h3>
+          <p>Набір із 12 мигдалевих тістечок із фісташковою та малиновою начинками.</p>
+        </article>
+        <article>
+          <h3>Весільний триповерховий торт</h3>
+          <p>Мусовий торт із велюровим покриттям та декором зі свіжих ягід.</p>
+        </article>
+        <article>
+          <h3>Майстер-клас із випічки еклерів</h3>
+          <p>Інтенсивний практичний курс із приготування заварного тіста та кремів.</p>
+        </article>
+      </div>
     </section>
- 
+
     <section id="contact">
       <h2>Контакти</h2>
       <form action="#" method="post">
-        <label for="name">Ім’я *</label><br>
-        <input type="text" id="name" name="name"
-               required minlength="2" maxlength="50"><br><br>
- 
-        <label for="email">Електронна пошта *</label><br>
-        <input type="email" id="email" name="email" required><br><br>
- 
-        <label for="topic">Тема звернення *</label><br>
+        <div class="form-row">
+          <div>
+            <label for="name">Ім’я *</label>
+            <input type="text" id="name" name="name"
+                   required minlength="2" maxlength="50">
+          </div>
+          <div>
+            <label for="email">Електронна пошта *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <label for="topic">Тема звернення *</label>
         <select id="topic" name="topic" required>
           <option value="" disabled selected>Оберіть тему</option>
           <option value="general">Загальне питання</option>
           <option value="work">Замовлення / Пропозиція співпраці</option>
-        </select><br><br>
- 
-        <label for="message">Повідомлення *</label><br>
+        </select>
+
+        <label for="message">Повідомлення *</label>
         <textarea id="message" name="message"
-                  required maxlength="500" rows="5"></textarea><br><br>
- 
+                  required maxlength="500" rows="5"></textarea>
+
         <button type="submit">Надіслати</button>
       </form>
     </section>
