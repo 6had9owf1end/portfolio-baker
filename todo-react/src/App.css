@@ -1,0 +1,154 @@
+.app {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #1a202c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #3182ce;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  background: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-add:hover {
+  background: #2b6cb0;
+}
+
+.filters-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border: 1px solid #e2e8f0;
+  background: #edf2f7;
+  color: #4a5568;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-btn.active {
+  background: #3182ce;
+  color: white;
+  border-color: #3182ce;
+}
+
+.search-input {
+  padding: 6px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #edf2f7;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: #f7fafc;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
+.btn-delete {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background: #c53030;
+}
+
+.counter {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #718096;
+  text-align: right;
+}
+
+.status-message {
+  text-align: center;
+  padding: 24px;
+  color: #718096;
+  font-size: 15px;
+}
+
+.error-message {
+  color: #e53e3e;
+  text-align: center;
+  padding: 16px;
+}
+
+.btn-retry {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
