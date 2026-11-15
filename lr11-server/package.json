@@ -1,0 +1,15 @@
+{
+  "name": "lr11-server",
+  "version": "1.0.0",
+  "description": "ЛР11: Express-сервер портфоліо кондитера (варіант 1, /api/cakes)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

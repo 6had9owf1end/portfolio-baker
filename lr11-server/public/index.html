@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо – Кулінарний блог кондитера</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+ 
+  <header>
+    <h1>Солодка Майстерня Олександра Бібка</h1>
+    <nav>
+      <a href="#about">Про мене</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#contact">Контакти</a>
+      <a href="lab6.html">Лабораторна 6</a>
+      <a href="todo.html">Список справ</a>
+      <a href="api.html">API</a>
+      <a href="dashboard.html">Дашборд</a>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="about">
+      <h2>Про мене</h2>
+      <p>
+        Привіт! Я професійний шеф-кондитер із 5-річним досвідом створення
+        авторських десертів, мусових тортів та ремісничої випічки. На цьому
+        сайті я ділюся перевіреними рецептами та власними кулінарними
+        проєктами.
+      </p>
+      <ul>
+        <li>Авторські мусові та весільні торти</li>
+        <li>Французька випічка та макаронс</li>
+        <li>Майстер-класи з кондитерського мистецтва</li>
+      </ul>
+    </section>
+ 
+    <section id="projects">
+      <h2>Проєкти</h2>
+      <div class="projects-list">
+        <article>
+          <h3>Авторський торт «Прага»</h3>
+          <p>Класичний шоколадний бісквіт із абрикосовим конфітюром та ганашем.</p>
+        </article>
+        <article>
+          <h3>Колекція французьких макаронс</h3>
+          <p>Набір із 12 мигдалевих тістечок із фісташковою та малиновою начинками.</p>
+        </article>
+        <article>
+          <h3>Весільний триповерховий торт</h3>
+          <p>Мусовий торт із велюровим покриттям та декором зі свіжих ягід.</p>
+        </article>
+        <article>
+          <h3>Майстер-клас із випічки еклерів</h3>
+          <p>Інтенсивний практичний курс із приготування заварного тіста та кремів.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Контакти</h2>
+      <form action="#" method="post">
+        <div class="form-row">
+          <div>
+            <label for="name">Ім’я *</label>
+            <input type="text" id="name" name="name"
+                   required minlength="2" maxlength="50">
+          </div>
+          <div>
+            <label for="email">Електронна пошта *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <label for="topic">Тема звернення *</label>
+        <select id="topic" name="topic" required>
+          <option value="" disabled selected>Оберіть тему</option>
+          <option value="general">Загальне питання</option>
+          <option value="work">Замовлення / Пропозиція співпраці</option>
+        </select>
+
+        <label for="message">Повідомлення *</label>
+        <textarea id="message" name="message"
+                  required maxlength="500" rows="5"></textarea>
+
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+  </main>
+ 
+  <footer>
+    <p>&copy; 2026 Бібко Олександр Сергійович. Усі права захищено.</p>
+  </footer>
+ 
+</body>
+</html>
