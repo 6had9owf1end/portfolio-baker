@@ -216,3 +216,51 @@ button:hover {
     flex: 1;
   }
 }
+
+
+/* Стилі для ЛР6 (каталог і конвертер) */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.toolbar button {
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: var(--spacing-sm);
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#summary {
+  font-weight: bold;
+  padding: var(--spacing-sm);
+  background-color: #f4f6f8;
+  border-radius: 4px;
+}
+
+#conv-result {
+  margin-top: var(--spacing-sm);
+  font-weight: bold;
+  color: var(--color-primary);
+}
