@@ -1,19 +1,24 @@
-import Badge from "./Badge.jsx";
-import { PRIORITY_LABELS } from "../data/todos.js";
- 
 function TodoItem({ todo, onToggle, onDelete }) {
   return (
-    <li className={todo.done ? "is-done" : ""}>
-      <input
-        type="checkbox"
-        checked={todo.done}
-        onChange={() => onToggle(todo.id)}
-        aria-label={`Виконано: ${todo.text}`}
-      />
-      <span className="text">{todo.text}</span>
-      <Badge kind={todo.priority}>{PRIORITY_LABELS[todo.priority]}</Badge>
-      <button type="button" onClick={() => onDelete(todo.id)}>
-        Видалити
+    <li className="todo-item">
+      <label className="todo-label">
+        <input
+          type="checkbox"
+          checked={todo.completed}
+          onChange={() => onToggle(todo.id)}
+        />
+        <span className={todo.completed ? 'todo-title done' : 'todo-title'}>
+          {todo.title}
+        </span>
+        {todo.meta && <span className="todo-badge">{todo.meta}</span>}
+      </label>
+      <button
+        type="button"
+        className="todo-delete"
+        aria-label={'Видалити завдання: ' + todo.title}
+        onClick={() => onDelete(todo.id)}
+      >
+        ✕
       </button>
     </li>
   );
